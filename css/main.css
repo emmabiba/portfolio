@@ -1,0 +1,50 @@
+/* Navigation */
+
+img.primary-menu-logo {
+  max-width: 150px;
+  margin: 15% 0 5% 20%;
+}
+
+.nav-bg{
+  background-color: #121B2D;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #E4A39C;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+ul li.nav-item a.active,
+ul li.nav-item a:hover {
+  border-bottom: 3px solid #E4A39C;
+}
+
+/* End Navigation */
+
+/* Home */
+
+body {
+  background-color: #121B2D;
+}
+
+/* End Home */
