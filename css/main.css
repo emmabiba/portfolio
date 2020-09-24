@@ -25,11 +25,6 @@ img.primary-menu-logo {
   color: #E4A39C;
 }
 
-body {
-  background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
 nav ul li {
   margin: 0 20px;
 }
@@ -39,12 +34,190 @@ ul li.nav-item a:hover {
   border-bottom: 3px solid #E4A39C;
 }
 
+.navbar-dark .navbar-toggler {
+  border: none;
+  color: #E4A39C;
+}
+
+span.navbar-toggler-icon {
+  color: #E4A39C;
+}
+
 /* End Navigation */
 
 /* Home */
 
 body {
   background-color: #121B2D;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.fixed {
+  margin: 130px 0 0 30px;
+}
+
+div.social-icons {
+  /* position: fixed; */
+  margin: 30px 10px 30px 30px;
+  bottom: 0;
+}
+
+h2 {
+  font-size: 75px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+span.accent-color {
+  color: #E4A39C;
+}
+
+i {
+  color: #fff;
+  font-size: 30px;
+}
+
+i:hover {
+  color: #E4A39C;
+}
+
+div.fixed i{
+  margin-right: 30px;
+}
+
+div.social-icons {
+  margin-top: 20px;
+}
+
+a, a:hover {
+  color: #E4A39C;
+}
+
+div.about {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+div.process {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 35px;
+}
+
+img.portrait {
+  max-width: 300px;
+}
+
+section.about-page {
+  margin: 130px 0 100px 0;
+}
+
+img.circular-logo {
+  max-width: 150px;
+}
+
+div.position-fixed img.circular-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 38px 30px 0;
+  z-index: 1;
+}
+
+.circular-logo {
+  animation: stamp 5s 1;
+}
+
+.circular-logo:hover {
+  animation: stamp 5s infinite;
+}
+
+footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #121B2D;
+  padding: 5px 0;
+}
+
+div.hero-section {
+  height: 70vh
 }
 
 /* End Home */
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E4A39C;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D96058;
+}
+
+/* End Scrollbar */
+
+/* Media Queries */
+
+@media (min-width: 1500px) {
+  div.fixed {
+    position: absolute;
+    margin: 0 0 0 30px;
+  }
+
+  div.social-icons {
+    margin: 0 0 30px 30px;
+  }
+
+  footer {
+    position: fixed;
+    z-index: -1;
+  }
+
+}
+
+@media (max-width: 1030px) {
+  img.circular-logo {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 45px;
+  }
+
+  div.about {
+    font-size: 20px;
+  }
+}
+
+/* End Media Queries */
+
+/* Animation */
+
+@keyframes stamp {
+  100% {transform: rotate(360deg);}
+}
+
+/* Animation */
