@@ -1,23 +1,40 @@
-<!-- HTML top code goes here -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<META HTTP-EQUIV="refresh" content="0;URL=thank-you.html">
+<title>Email Form</title>
+</head>
 
-<?
+<body>
+<?php
+  $name=addslashes($_POST['name']);
+  $email=addslashes($_POST['email']);
+  $text=addslashes($_POST['text']);
 
-// From processing takes place here. message displayed here too
-require('form/form.class.php');
-$form = new Form();
-$form->processForm(
+ // you can specify which email you want your contact form to be emailed to here
 
-	'gmail.com' // Put your mail domain here
-	,
-	'EmmaBiba.com' // Put your site name / form name here
-	,
-	'emma.n.biba@gmail.com' // Where will the form notification be sent?
-	,
-	'noreply@emmabiba.com' // This what the form FROM: address wil be, if the form submissions doesn't contain an email field
+  $toemail = "emma.n.biba@gmail.com";
+  $subject = "from EmmaBiba.com";
 
-);
+  $headers = "MIME-Version: 1.0\n"
+            ."From: \"".$name."\" <".$email.">\n"
+            ."Content-type: text/html; charset=iso-8859-1\n";
 
+  $body = "Name: ".$name."<br>\n"
+            ."Email: ".$email."<br>\n"
+            ."Message:<br>\n"
+            .$text;
 
+  if (!ereg("^[a-zA-Z0-9_]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$", $email))
+  {
+    echo "That is not a valid email address.  Please return to the"
+           ." previous page and try again.";
+    exit;
+  }
+
+    mail($toemail, $subject, $body, $headers);
+    echo "Thanks for sending me a message! I'll get back to you.";
 ?>
-
-<!-- HTML bottom code goes here -->
+</body>
+</html>
