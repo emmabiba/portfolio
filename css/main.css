@@ -47,24 +47,33 @@ span.navbar-toggler-icon {
 
 /* Home */
 
+h1 {
+  font-weight: bold;
+}
+
+h2.display-4 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 body {
   background-color: #121B2D;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
 
-div.fixed {
-  margin: 130px 0 0 30px;
+div.page-content {
+  margin: 10px 0 10px 50px;
+  z-index: 1;
 }
 
 div.social-icons {
-  /* position: fixed; */
-  margin: 30px 10px 30px 30px;
+  margin: 30px 10px 30px 50px;
   bottom: 0;
 }
 
-h2 {
-  font-size: 75px;
+h2.design-skills {
+  font-size: 65px;
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
@@ -108,21 +117,12 @@ div.about {
 
 div.process {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 35px;
 }
 
 img.portrait {
   max-width: 300px;
-}
-
-section.about-page {
-  margin: 130px 0 100px 0;
-  padding: 0 20px;
-}
-
-section.portfolio-page {
-  margin: 130px 0 100px 0;
 }
 
 img.circular-logo {
@@ -145,12 +145,10 @@ div.position-fixed img.circular-logo {
 }
 
 footer {
-  position: sticky;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #121B2D;
   padding: 5px 0;
+  z-index: -10;
 }
 
 div.hero-section {
@@ -167,7 +165,7 @@ span.italic {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -248,7 +246,7 @@ div.contact-fixed {
 }
 
 img.hand {
-  max-width: 450px;
+  max-width: 350px;
 }
 
 /* End Contact Page */
@@ -269,8 +267,84 @@ section.breadcrumbs i {
 
 /* Portfolio Page */
 
+a.back-to-link {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+i.back-to-link {
+  color: #e4a39c;
+  font-size: 18px;
+}
+
+.jumbotron {
+  padding: 5% 10%;
+}
+
 h3 {
   font-weight: 700;
+}
+
+.case-study-content h3{
+  font-weight: normal;
+}
+
+.portfolio h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+div.portfolio{
+  text-align: center;
+  margin: 0 50px;
+}
+
+div.jumbotron.mon-petit-chum {
+  background:linear-gradient(0deg, rgba(18, 27, 45, 0.9), rgba(26, 26, 26, .1)), url('../images/portfolio/wakefield.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.jumbotron.fdp-dls {
+  background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/oil-rig.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.jumbotron.uf {
+  background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.jumbotron {
+  width: 100%;
+}
+
+a.btn.btn-primary.btn-lg {
+  text-decoration: none;
+  background-color: #e4a39c;
+  border: none;
+  font-weight: 700;
+  color: #121b2d;
+  font-size: 17px;
+  border-radius: 30px;
+}
+
+a.btn.btn-primary.btn-lg:hover {
+  background-color: #d96058;
+}
+
+hr {
+  border-color: #fff;
+  width: 100px;
 }
 
 /* End Portfolio Page */
@@ -278,16 +352,9 @@ h3 {
 /* Media Queries */
 
 @media (max-width: 1500px) {
-  div.contact-fixed {
-    display: none;
-  }
 
   .thank-you-page {
     display: none;
-  }
-
-  footer {
-    position: fixed;
   }
 }
 
@@ -303,34 +370,37 @@ h3 {
     z-index: 1;
   }
 
-  div.fixed {
-    position: absolute;
-    margin: 0 0 0 30px;
-  }
+}
 
-  div.fixed-footer {
-    position: relative;
-  }
+@media (max-width: 1350px) {
 
-  footer {
-    position: absolute;
+  div.contact-fixed {
+    display: none;
   }
-
-  section.about-page {
-    margin: 130px 0 0 0;
+  h2.design-skills {
+    margin-bottom: 30px;
   }
-
-  section.portfolio-page {
-    margin: 130px 0 0 0;
-  }
-
 }
 
 @media (max-width: 1030px) {
   img.circular-logo {
     display: none;
   }
+}
 
+@media (max-width: 590px) {
+  img.primary-menu-logo {
+    max-width: 150px;
+    margin: 15% 0 5% 0px;
+  }
+  div.page-content {
+    margin: 10px 0 10px 0px;
+    z-index: 1;
+  }
+  div.social-icons {
+    margin: 30px 10px 30px 20px;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -342,6 +412,8 @@ h3 {
     font-size: 20px;
   }
 }
+
+
 
 /* End Media Queries */
 

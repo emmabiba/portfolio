@@ -36,13 +36,13 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Emma Biba</title>
-    <meta name="description" content="Graphic Designer | UX + UI Designer | Web Designer">
+    <meta name="description" content="UX + UI Designer | Web Designer | Graphic Designer">
 
   </head>
   <body>
 
     <header>
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark nav-bg">
+      <nav class="navbar navbar-expand-md navbar-dark nav-bg">
         <a class="navbar-brand" href="index.html"><img src="images/logos/biba-logo.png" alt="Biba" title="Biba Logo" class="primary-menu-logo"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,49 +61,45 @@
               <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
     </header>
 
     <main>
-      <div class="fixed hero-section">
-        <h2>
-          <span class="accent-color">Graphic</span>
-          <br>Designer
-          <br><span class="accent-color">UX + UI</span>
-          <br>Designer
-          <br><span class="accent-color">Web</span>
-          <br>Designer
-        </h2>
-      </div>
+      <div class="page-content container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="design-skills">
+              <span class="accent-color">UX + UI</span>
+              <br>Designer
+              <br><span class="accent-color">Web</span>
+              <br>Designer
+              <br><span class="accent-color">Graphic</span>
+              <br>Designer
+            </h2>
+          </div>
 
-      <section class="about-page">
 
-        <div class="container about">
-          <div class="row">
-            <div class="col-lg-7 offset-lg-3 col-md-10 col-sm-11 col-xs-12 offset-md-1 offset-sm-1">
-              <p>Have a question?
-              <br>Want to see my resume?
-              <br>Interested in collaborating?
-              <br>Get in touch.</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="about">
+                <h1>Contact</h1>
+                <p>Have a question?
+                <br>Want to see my resume?
+                <br>Interested in collaborating?
+                <br>Get in touch.</p>
+              </div>
+              <div class="process">
+                <form name="contact" action="form.php" method="post">
+                  <input name="name" type="text" class="feedback-input" placeholder="Enter your name" required/>
+                  <input name="email" type="text" class="feedback-input" placeholder="Enter your email" required/>
+                  <textarea name="text" class="feedback-input" placeholder="Enter your message..." required></textarea>
+                  <input name="submit" type="submit" value="Submit" id="submit"/>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="container process">
-          <div class="row">
-            <div class="col-lg-7 offset-lg-3 col-md-10 col-sm-11 col-xs-12 offset-md-1 offset-sm-1">
-              <form name="contact" action="form.php" method="post">
-                <input name="name" type="text" class="feedback-input" placeholder="Enter your name" required/>
-                <input name="email" type="text" class="feedback-input" placeholder="Enter your email" required/>
-                <textarea name="text" class="feedback-input" placeholder="Enter your message..." required></textarea>
-                <input name="submit" type="submit" value="Submit" id="submit"/>
-              </form>
-            </div>
-          </div>
-        </div>
-
-      </section>
 
       <div class="contact-fixed">
         <img src="images/get-in-touch.png" alt="Hand pointing towards contact form" title="Copy of Sistine Chapel The Creation of Adam painting of hand pointing" class="hand">
