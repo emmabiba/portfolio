@@ -275,6 +275,10 @@ ul.no-bullet li {
   list-style: none;
 }
 
+ul.no-bullet {
+  padding-left: 0;
+}
+
 a.back-to-link {
   color: #fff;
   margin-bottom: 20px;
@@ -460,6 +464,10 @@ i.external-link-symbol {
 @media (max-width: 500px) {
   h2 {
     font-size: 45px;
+  }
+
+  div.center{
+    text-align: left;
   }
 
   h2.design-skills {
