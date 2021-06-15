@@ -267,14 +267,33 @@ section.breadcrumbs i {
 
 /* Portfolio Page */
 
+div.center{
+  text-align: center;
+}
+
+ul.no-bullet li {
+  list-style: none;
+}
+
 a.back-to-link {
   color: #fff;
   margin-bottom: 20px;
   text-align: left;
+  text-decoration: none;
+}
+
+a.back-to-link:hover {
+  color: #e4a39c;
+  text-decoration: underline;
 }
 
 i.back-to-link {
   color: #fff;
+  font-size: 18px;
+}
+
+i.back-to-link.pink{
+  color: #e4a39c;
   font-size: 18px;
 }
 
@@ -418,7 +437,7 @@ i.external-link-symbol {
 
 @media (min-width: 1030px) {
   div.case-study-margin {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
   }
 }
