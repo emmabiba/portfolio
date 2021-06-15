@@ -424,7 +424,7 @@ hr {
   div.jumbotron.mon-petit-chum {
     background:linear-gradient(0deg, rgba(18, 27, 45, 0.9), rgba(26, 26, 26, .1)), url('../images/portfolio/wakefield.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: top;
   }
@@ -432,7 +432,7 @@ hr {
   div.jumbotron.fdp-dls {
     background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/oil-rig.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: top;
   }
@@ -440,7 +440,7 @@ hr {
   div.jumbotron.uf {
     background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size:cover;
     background-position: top;
   }
