@@ -413,6 +413,10 @@ hr {
     font-size: 45px;
   }
 
+  h2.design-skills {
+    font-size: 35px;
+  }
+
   div.about {
     font-size: 20px;
   }
@@ -421,24 +425,24 @@ hr {
     background:linear-gradient(0deg, rgba(18, 27, 45, 0.9), rgba(26, 26, 26, .1)), url('../images/portfolio/wakefield.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
-    background-position: bottom;
+    background-size: cover;
+    background-position: top;
   }
 
   div.jumbotron.fdp-dls {
     background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/oil-rig.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
-    background-position: bottom;
+    background-size: cover;
+    background-position: top;
   }
 
   div.jumbotron.uf {
     background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
-    background-position: bottom;
+    background-size:cover;
+    background-position: top;
   }
 }
 
