@@ -342,7 +342,7 @@ div.jumbotron.fdp-dls {
 }
 
 div.jumbotron.uf {
-  background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
+  background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -491,7 +491,7 @@ i.external-link-symbol {
   }
 
   div.jumbotron.uf {
-    background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
+    background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size:cover;
