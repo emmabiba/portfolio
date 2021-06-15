@@ -63,7 +63,7 @@ body {
 }
 
 div.page-content {
-  margin: 10px 0 10px 50px;
+  margin: 10px 30px 10px 30px;
   z-index: 1;
 }
 
@@ -268,12 +268,13 @@ section.breadcrumbs i {
 /* Portfolio Page */
 
 a.back-to-link {
+  color: #fff;
   margin-bottom: 20px;
   text-align: left;
 }
 
 i.back-to-link {
-  color: #e4a39c;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -287,6 +288,10 @@ h3 {
 
 .case-study-content h3{
   font-weight: normal;
+}
+
+div.case-study-content {
+  margin: 0 20px;
 }
 
 .portfolio h1 {

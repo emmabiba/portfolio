@@ -68,19 +68,90 @@
 
     <main>
       <div class="page-content">
-        <i class="fas fa-arrow-left back-to-link"></i>  <a href="../portfolio.html" class="back-to-link">Back to Portfolio</a>
+        <div class="case-study-content">
+          <i class="fas fa-arrow-left back-to-link"></i>  <a href="../portfolio.html" class="back-to-link">Back to Portfolio</a>
+        </div>
       </div>
       <div class="page-content portfolio">
         <div class="jumbotron fdp-dls">
           <h1 class="display-4">Design Language System</h1>
-          <p class="lead">Aligning, curating and building upon a web application Design Language System</p>
+          <p class="lead">Primary Goal: Aligning, curating and building upon a web application Design Language System</p>
+          <p class="lead">Secondary Goal: Incorporating this documentation and related assets into a project specific UX onboarding process.</p>
           <hr class="my-4">
           <p>Team Member: Manuela Rincon</p>
           <p>Role: UI Designer</p>
+          <p>Timeline: 3.5 Weeks</p>
         </div>
-
+      </div>
+      <div class="page-content">
         <div class="case-study-content">
-          
+          <h2>Introduction</h2>
+          <p>When I started on this project, there wasn’t an onboarding process for new UX team members and there was very little documentation about design decisions and patterns.</p>
+          <p>After working on the data heavy web application with eight agile teams across two time zones, Houston & India, Manuela and I saw the growing importance of having a single source to reference design standards./<p>
+
+          <h3>The Necessity for a Project Specific DLS</h3>
+          <ul>
+            <li>There were three design language system documents, with conflicting patterns, that both Designers and Developers had to reference for the application.</li>
+            <ul>
+              <li>Company DLS (Schlumberger Design Language System)</li>
+              <li>ITDLS V.3.0 & V.3.1 (Informational Technology Design Language System)</li>
+            </ul>
+            <li>When new patterns were established, there was no system in place for every team to see and learn about the pattern. The hand-off documents were attached to a specific team’s backlog, resulting in unwanted design variations across the application.</li>
+            <li>Because of the size of the project and the large gap in time zones, designers were not involved in all story developments and some patterns were not being correctly utilized.</li>
+            <li>Product Manager and Product Owners were okay with alternating and adjusting these patterns on the fly to meet story needs, with no documentation of the new states.</li>
+          </ul>
+
+          <h2>Overview</h2>
+          <p>The document contains user interface specifications and usage guidelines for FDP (Field Delivery Platform). It sets consistent standards for all the teams to follow in order to provide a unified user experience across FDP.</p>
+          <p>As an Adobe XD document, it doubles as a source for the UX team to copy and add components to new prototypes.</p>
+
+          <h3>My Role: UI Designer</h3>
+          <p>As a part of the Houston FDP UX team of two, I worked alongside Manuela on all the following:
+            <ul>
+              <li>Going through application and noting undocumented UI patterns.</li>
+              <li>Pulling aside the documented patterns in use from the existing Design Language Systems.</li>
+              <li>Creating a master document with all these elements and sorting them into five main categories: Overview, Action, Input, Layout and Information.</li>
+              <li>Created an XD version of the documentation, adding new patterns and expanding on existing ones that needed further explanation.</li>
+            </ul>
+          </p>
+
+          <h3>Content Architecture</h3>
+          <p>Identifying UI Patterns and organizing them into five categories: Overview, Action, Input, Layout & Information</p>
+          <p>Figure A. Shows the outline Manuela and I crafted after going through the FDP applications and identifying all the documented and undocumented patterns.</p>
+          <p>From the five main categories we sub-categorized each pattern with variations by growing complexity. An example of this being the search field pattern. The basic search, such as the Chrome command F, searching just the content on the page versus an advanced search that searches through a database.</p>
+          <p>Figure A.</p>
+          <img src="#" alt="#"/>
+
+          <h2>Highlights</h2>
+          <p>Tag-teaming on a shared XD file, there are three patterns I would like to call attention to from my contribution.</p>
+
+          <h3>Date Picker Range</h3>
+          <img src="#" alt="#"/>
+          <p>Operational Activities in the oil field can last a few days or span across multiple months. This necessitated a date picker range functionality for selecting the start and end date of an Operation or Operational Activity. Users can enter the data in the input fields or select dates on the calendars.</p>
+          <p>The Date Picker Range functionality was also implemented within advanced searches.</p>
+
+          <h3>Panel List - Tiles</h3>
+          <img src="#" alt="#"/>
+          <p>The tiles within the panel list are selectable items that then change the data being displayed on the right hand side of the screen.</p>
+          <p>This feature was implemented in the Cameron application for viewing Field Order data. When users selected a Field Order from the panel list, they could then see the personnel assigned to a project and their role.</p>
+          <p>The secondary information in the tiles was used to display content allowing users to quickly identify the Field Orders.</p>
+
+          <h3>Informative Messages Within Modals</h3>
+          <img src="#" alt="#"/>
+          <p>Informative messages within modals are used to convey potential errors to a user before they have submitted data. They can also be used to relay messages about actions that should be taken before proceeding.</p>
+          <p>For example, the data within the modal may have a dependency on Personnel Demand which hasn’t been finalized. In that instance, a warning message would tell the user to review the Personnel Demand and provide a link to that page.</p>
+
+          <h2>Final FDP-DLS V1.0</h2>
+          <p>46 UI Patterns in Total</p>
+          <p>The final product was 60 pages of documentation for the UX team to build upon and use as a tool for quickly adding XD components to new prototypes.</p>
+          <p>The final step for me was to add the Adobe XD source file and PDF to the UX Onboarding folder, and hand off final documentation to the Product Owner to distribute across all eight agile teams. I then created a video explaining how to use the FDP-DLS, and defined steps the UX team should take when modifying an existing pattern or establishing a new one.</p>
+          <a href="https://drive.google.com/file/d/1QVUmw6HTYcMbiuIip1PS2hBevj_wCsOF/view?usp=sharing" target="_blank" class="btn btn-primary btn-lg">View FDP-DLS</a>
+
+          <h2>Final Thoughts and Lessons Learned</h2>
+          <p>Three and half weeks was a rushed time-frame to complete this document. We originally intended to work with developers to create coded versions of these components. However with the news that the company was cutting costs and moving our positions, we realized that we needed to narrow our scope. Ideally this document would have already been started before we joined the project, so that it’s just a matter of keeping it up to date.</p>
+          <p>It’s incredibly beneficial for UX teams to have project specific onboarding and at least one team member should be in charge of maintaining proper documentation of design patterns and decisions.</p>
+
+          <a href="../portfolio.html">Back to Portfolio</a>
         </div>
       </div>
     </main>
