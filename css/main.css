@@ -370,6 +370,11 @@ i.external-link-symbol {
 .case-study-content h4{
   font-size: 20px;
 }
+
+.case-study-content img{
+  margin: 10px 0 20px 0;
+  max-width: 100%;
+}
 /* End Portfolio Page */
 
 /* Media Queries */
