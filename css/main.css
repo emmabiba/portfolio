@@ -416,6 +416,13 @@ i.external-link-symbol {
   }
 }
 
+@media (min-width: 1030px) {
+  div.case-study-margin {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 590px) {
   img.primary-menu-logo {
     max-width: 150px;
