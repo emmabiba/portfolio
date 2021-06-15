@@ -422,18 +422,27 @@ hr {
   }
 
   div.jumbotron.mon-petit-chum {
-    background-image: none;
-    background-color: #080E1A;
+    background:linear-gradient(0deg, rgba(18, 27, 45, 0.9), rgba(26, 26, 26, .1)), url('../images/portfolio/wakefield.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom;
   }
 
   div.jumbotron.fdp-dls {
-    background-image: none;
-    background-color: #080E1A;
+    background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/oil-rig.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top;
   }
 
   div.jumbotron.uf {
-    background-image: none;
-    background-color: #080E1A;
+    background:linear-gradient(0deg, rgba(18, 27, 45, 1.5), rgba(26, 26, 26, .6)), url('../images/portfolio/stadium.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    background-position: top;
   }
 }
 
