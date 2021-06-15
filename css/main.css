@@ -426,7 +426,7 @@ hr {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
   }
 
   div.jumbotron.fdp-dls {
