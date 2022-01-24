@@ -121,6 +121,10 @@ a.button-home {
   font-size: 18px;
 }
 
+a.button-home:hover {
+  background-color: #fff;
+}
+
 nav a, nav a:hover {
   text-decoration: none;
 }
@@ -447,7 +451,7 @@ a.btn.btn-primary.btn-lg {
 }
 
 a.btn.btn-primary.btn-lg:hover {
-  background-color: #d96058;
+  background-color: #fff;
 }
 
 hr {
@@ -550,7 +554,7 @@ i.external-link-symbol {
     margin-right: 20px;
   }
 
-  a.button {
+  a.button-home {
     display: block;
     margin-top: 20px;
     text-align: center;
