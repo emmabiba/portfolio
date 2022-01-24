@@ -95,6 +95,11 @@ i:hover {
 div.fixed-footer i {
   margin-right: 30px;
 }
+footer p{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 div.social-icons {
   margin-top: 20px;
@@ -105,6 +110,17 @@ a, a:hover {
   color: #E4A39C;
 }
 
+a.button {
+  text-decoration: none;
+  color: #121B2D;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #E4A39C;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 nav a, nav a:hover {
   text-decoration: none;
 }
@@ -113,6 +129,10 @@ div.about {
   font-weight: 400;
   font-size: 25px;
   line-height: 40px;
+}
+
+div.about h1 {
+  font-size: 25px;
 }
 
 div.process {
@@ -134,6 +154,7 @@ div.position-fixed img.circular-logo {
   bottom: 0;
   right: 0;
   margin: 0 38px 30px 0;
+  z-index: -10;
 }
 
 .circular-logo {
@@ -159,7 +180,66 @@ span.italic {
   font-style: italic;
 }
 
+div.skills ul{
+  list-style: none;
+}
+
+div.skills {
+  margin: 100px auto;
+  color: #121B2D;
+  background-color: #E4A39C;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 30px 30px 30px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+div.skills h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+hr.skills {
+  border-color: #121B2D;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
 /* End Home */
+
+/* About Page */
+
+.about-tagline h1 {
+  font-size: 30px;
+}
+.about-tagline p {
+  font-size: 20px;
+}
+.doing h2, .other h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #E4A39C;
+}
+.doing p, .other p {
+  font-size: 18px;
+}
+.doing ul, .other ul {
+  list-style: none;
+  font-size: 18px;
+}
+.doing ul li::before, .other ul li::before {
+  content: "\2022";
+  color: #E4A39C;
+  font-size: 23px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* End About Page */
 
 /* Scrollbar */
 
@@ -456,14 +536,24 @@ i.external-link-symbol {
     z-index: 1;
   }
   div.social-icons {
-    margin: 30px 10px 30px 20px;
+    margin: 30px 10px 30px 30px;
     bottom: 0;
   }
 }
 
 @media (max-width: 500px) {
   h2 {
-    font-size: 45px;
+    font-size: 35px;
+  }
+
+  div.fixed-footer i {
+    margin-right: 20px;
+  }
+
+  a.button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
   }
 
   div.center{
@@ -488,6 +578,8 @@ i.external-link-symbol {
     background-attachment: scroll;
     background-size: cover;
     background-position: bottom;
+    max-width: 95%;
+    margin: 10px auto;
   }
 
   div.jumbotron.fdp-dls {
@@ -496,6 +588,8 @@ i.external-link-symbol {
     background-attachment: scroll;
     background-size: cover;
     background-position: top;
+    max-width: 95%;
+    margin: 10px auto;
   }
 
   div.jumbotron.uf {
@@ -504,6 +598,11 @@ i.external-link-symbol {
     background-attachment: scroll;
     background-size:cover;
     background-position: top;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+  p.lead {
+    font-size: 18px;
   }
 }
 
