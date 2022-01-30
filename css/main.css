@@ -364,10 +364,10 @@ ul.no-bullet {
 }
 
 a.back-to-link {
-  color: #fff;
+  color: #e4a39c;
   margin-bottom: 20px;
   text-align: left;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a.back-to-link:hover {
@@ -376,8 +376,9 @@ a.back-to-link:hover {
 }
 
 i.back-to-link {
-  color: #fff;
-  font-size: 18px;
+  color: #e4a39c;
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 i.back-to-link.pink{
@@ -434,6 +435,13 @@ div.jumbotron.uf {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+div.jumbotron.man-united {
+  background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/man-united-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
 }
 
 .jumbotron {
@@ -605,6 +613,17 @@ i.external-link-symbol {
     max-width: 95%;
     margin: 10px auto;
   }
+
+  div.jumbotron.man-united {
+    background:linear-gradient(0deg, rgba(18, 27, 45, 1), rgba(26, 26, 26, .6)), url('../images/portfolio/man-united-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    background-position: top;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
   p.lead {
     font-size: 18px;
   }
