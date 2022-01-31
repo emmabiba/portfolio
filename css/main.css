@@ -492,6 +492,28 @@ i.external-link-symbol {
 }
 /* End Portfolio Page */
 
+/* Sub Nav Case Study Pages */
+.sub-nav {
+  background-color: #E4A39C;;
+  font-size: 15px;
+  color: #121B2D;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.sub-nav p {
+  padding: 15px 0;
+  line-height: 30px;
+}
+
+.sub-nav a{
+  color: #121B2D;
+  padding: 10px 10px;
+}
+/* End Sub Nav Case Study Pages */
+
 /* Media Queries */
 
 @media (max-width: 1500px) {
